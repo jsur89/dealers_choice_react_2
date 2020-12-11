@@ -1,0 +1,18 @@
+<section id="gigs" class="container">
+  <h1>List of Todo's</h1>
+
+  {{#each todos}}
+  <div class="todo">
+    <h3>{{name}}</h3>
+    <p>{{description}}</p>
+    <ul>
+      <li>Priority: {{priority}}</li>
+      <li><a href="#" class="btn btn-reverse">Delete</a></li>
+    </ul>
+    <div class="tech">
+      <small>Status: <span>{{status}}</span></small>
+    </div>
+  </div>
+  {{else}}
+  <p>No Todo's available. Hooray!</p>
+  {{/each}}
